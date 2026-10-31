@@ -36,10 +36,10 @@
   const pad = n => String(n).padStart(2, "0");
   const updateHeroClock = () => {
     const now = new Date();
-    $("#hours").textContent = pad(now.getHours());
-    $("#minutes").textContent = pad(now.getMinutes());
-    $("#seconds").textContent = pad(now.getSeconds()) + " SEC";
-    $("#date-label").textContent = new Intl.DateTimeFormat(undefined, { weekday:"short", day:"2-digit", month:"short" }).format(now).toUpperCase();
+    if ($("#hours")) $("#hours").textContent = pad(now.getHours());
+    if ($("#minutes")) $("#minutes").textContent = pad(now.getMinutes());
+    if ($("#seconds")) $("#seconds").textContent = pad(now.getSeconds()) + " SEC";
+    if ($("#date-label")) $("#date-label").textContent = new Intl.DateTimeFormat(undefined, { weekday:"short", day:"2-digit", month:"short" }).format(now).toUpperCase();
   };
   updateHeroClock();
   window.setInterval(updateHeroClock, 1000);
