@@ -124,5 +124,6 @@
     });
   };
   tabs.forEach(tab => tab.addEventListener("click", () => setMode(tab.dataset.mode)));
+  window.setInterval(() => { if (mode === "clock") paint(); }, 1000);
   setMode("clock");
 })();
