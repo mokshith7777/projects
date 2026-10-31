@@ -2,7 +2,7 @@
   "use strict";
   const cfg = window.TIMEJ_PAYMENT_CONFIG || {};
   const amount = "49.00";
-  const note = "TimeJ Pro Unlock";
+  const note = "TimeJ Support";
   const supportButton = document.getElementById("upi-support");
   const hint = document.getElementById("upi-hint");
   const modal = document.getElementById("payment-modal");
