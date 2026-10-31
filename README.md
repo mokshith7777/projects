@@ -1,40 +1,33 @@
-# JARVIS AI — Cinematic 3D Portfolio
+# JARVIS Projects
 
-A freestanding, single-page cinematic 3D portfolio for **JARVIS AI**, built with
-**vanilla Three.js** (no build step, no framework). Deploys as static files to GitHub Pages.
+A collection of personal products and experiments created under the JARVIS identity.
 
-## Run locally
-ES modules require http (not `file://`):
+## TIMEJ — Android timekeeping
 
-```bash
-cd scroll-portfolio
-python3 -m http.server 8080
-# open http://localhost:8080
-```
+**Precision. Focus. Every second.**
 
-## Deploy to GitHub Pages
-1. Create a repo on GitHub (e.g. `jarvis-ai-portfolio`).
-2. Push this folder and let Actions build:
+TIMEJ brings a mechanical-inspired clock and practical timing tools into one focused Android experience.
 
-```bash
-git init
-git add .
-git commit -m "JARVIS AI cinematic 3D portfolio"
-git branch -M main
-git remote add origin https://github.com/<you>/jarvis-ai-portfolio.git
-git push -u origin main
-```
+### Features
+- **Mechanical Flip Clock:** a distinctive split-flap-inspired clock face designed for quick, clear time awareness.
+- **Stopwatch:** track elapsed time with dedicated start, pause and reset controls.
+- **Countdown Timer:** set a duration, follow the remaining time and receive a completion alert in the app.
+- **Pomodoro Focus:** structure work into focused intervals and planned breaks.
+- **Android-first experience:** a compact mobile application with a consistent visual identity.
 
-3. GitHub → repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-   The site publishes at `https://<you>.github.io/jarvis-ai-portfolio/`.
+### TIMEJ links
+- [Open the TIMEJ product website](https://mokshith7777.github.io/projects/timej-site/)
+- [Browse the TIMEJ website files](https://github.com/mokshith7777/projects/tree/main/timej-site)
 
-## Files
-- `index.html` — 5 sections: Home, About, Work, Craft, Owner (bio for Mokshith Reddy)
-- `styles.css` — cinematic dark theme, glass cards, scroll reveal, reduced-motion fallback
-- `main.js` — Three.js hero: JARVIS core + cyan wireframe, web filaments (Spidey motif),
-  golden halo (Prabhas motif), particle field, UnrealBloom, scroll-driven camera
+## Other JARVIS projects
+- [JARVIS Terminal Agent](https://github.com/mokshith7777/jarvis-terminal-agent)
+- [Track Jarvis](https://github.com/mokshith7777/jarvis-tracker)
+- [Movie Stream](https://github.com/mokshith7777/movie-stream)
+- [Spider-JARVIS AI](https://github.com/mokshith7777/Spider-JARVIS-AI)
 
-## Before shipping
-- Replace `YOUR_WEB3FORMS_KEY` in `index.html` (free key at web3forms.com).
-- Art direction is a *stylized homage* to the Spider-Man (Andrew Garfield) and Prabhas
-  references via geometry + palettes — not likenesses/IP of those properties.
+## Creator
+**Mokshith Reddy**  
+Independent product builder exploring AI assistants, Android applications, web experiences and interactive systems.
+
+## Security
+This is a public repository. Do not commit passwords, API keys, access tokens, signing credentials, private endpoints or personal data. Credentials exposed in earlier commits must be revoked or rotated at their provider; removing a value from the latest version does not erase it from Git history.
