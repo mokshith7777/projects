@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#030303">
+<meta name="description" content="TIMEJ by JARVIS: split-flap clock, stopwatch, countdown, Pomodoro focus and 12 visual themes. Technical specifications are labelled by verification status.">
+<title>JARVIS × TIMEJ | Precision. Focus. Every Second.</title>
+<link rel="icon" type="image/webp" href="./assets/timej-icon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./payment-config.js"></script>
+<script defer src="./app.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script defer src="./payments.js"></script>
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div><div class="vignette" aria-hidden="true"></div>
+<header class="topbar">
+ <a class="wordmark" href="#home">JARVIS<span>●</span></a>
+ <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+ <nav class="nav-links">
+  <a href="#features">FEATURES</a><a href="#experience">PREVIEW</a><a href="#verification">TECHNICAL AUDIT</a><a href="#download">DOWNLOAD</a><a href="#creator">CREATOR</a>
+ </nav>
+ <a class="nav-cta" href="#download">RELEASE STATUS ↗</a>
+</header>
+<main id="home">
+<section class="hero wrap">
+ <div class="hero-copy reveal">
+  <div class="eyebrow"><i></i> JARVIS PRESENTS · ANDROID APPLICATION</div>
+  <p class="overline">PRECISION TIMEKEEPING SYSTEM</p>
+  <h1>TIME<span>J</span></h1>
+  <p class="hero-sub">Precision. Focus.<br><em>Every second.</em></p>
+  <p class="hero-desc">A mechanical-inspired split-flap clock experience with stopwatch, countdown, Pomodoro sessions, activity summaries and a collection of visual themes. The product page now separates what was observed in the supplied APK from performance claims that still need device testing.</p>
+  <div class="actions">
+   <a class="btn primary" href="#download">CHECK RELEASE STATUS <small>ANDROID APK</small></a>
+   <a class="btn ghost" href="#verification">VIEW TECHNICAL AUDIT <b>↘</b></a>
+  </div>
+  <div class="hero-facts"><span><b>12</b> THEME DEFINITIONS OBSERVED</span><span><b>4</b> TIMER / CLOCK MODULES</span><span><b>API 26</b> MINIMUM SDK</span></div>
+ </div>
+ <div class="hero-art reveal">
+  <div class="art-frame"><div class="art-glow"></div><img class="app-icon-art" src="./assets/timej-icon.webp" alt="TIMEJ application icon"><div class="art-corner c1"></div><div class="art-corner c2"></div></div>
+  <div class="art-label"><span>JARVIS / TIMEJ</span><span>APK INSPECTION · BUILD 5</span></div>
+ </div>
+</section>
+
+<section class="intro-band"><div class="wrap intro-inner"><span>PRODUCT / 01</span><p>TIME SHOULD FEEL <b>INTENTIONAL.</b> NOT ORDINARY.</p><span>ANDROID EXPERIENCE</span></div></section>
+
+<section class="wrap section-pad" id="features">
+ <div class="section-heading reveal"><div><span class="section-number">01 / PRODUCT FEATURES</span><h2>ONE APP.<br><em>FOUR WAYS</em><br>TO OWN YOUR TIME.</h2></div><p>Feature descriptions below are based on the bundled application assets and code inspected in the supplied APK. They describe implementation evidence, not a guarantee of identical behaviour on every Android device.</p></div>
+ <div class="feature-grid">
+  <article class="feature-card reveal"><div class="feature-top"><span>01 / CLOCK FACE</span><b>◷</b></div><div class="flip-preview"><div class="flip-tile" id="feature-hours">10</div><i>:</i><div class="flip-tile" id="feature-minutes">31</div></div><div class="feature-copy"><h3>3D Split-Flap Clock</h3><p>Mechanical-inspired clock presentation with split-flap styling, date and time detail. Canvas and animation code are present in the supplied app assets; measured frame rate has not been established.</p><ul><li>Time and date presentation</li><li>Multiple visual styles</li><li>Portrait and landscape presentation logic</li></ul></div></article>
+  <article class="feature-card reveal"><div class="feature-top"><span>02 / TIME TOOLS</span><b>◉</b></div><div class="feature-visual"><div class="stopwatch-ring"><span>00:00</span><small>ELAPSED</small></div></div><div class="feature-copy"><h3>Stopwatch &amp; Countdown</h3><p>Stopwatch, lap-related UI and configurable countdown/timer controls are represented in the bundled application interface and scripts.</p><ul><li>Elapsed-time display</li><li>Timer selection interface</li><li>Audio and vibration code paths present</li></ul></div></article>
+  <article class="feature-card reveal"><div class="feature-top"><span>03 / FOCUS MODE</span><b>◎</b></div><div class="feature-visual countdown-visual"><strong>25<span>:00</span></strong><div class="count-track"><i></i></div><small>POMODORO SESSION CONCEPT</small></div><div class="feature-copy"><h3>Pomodoro Focus</h3><p>Focus intervals, break-cycle logic and session categorisation appear in the bundled app code. Real-world notification and background behaviour depend on Android power and app lifecycle rules.</p><ul><li>Focus and break phases</li><li>Session records and summaries</li><li>Background persistence not guaranteed</li></ul></div></article>
+  <article class="feature-card reveal"><div class="feature-top"><span>04 / PERSONALISATION</span><b>✳</b></div><div class="feature-copy theme-copy"><h3>12 Visual Theme Definitions</h3><p>The bundled app HTML contains named theme definitions. Their presence was confirmed by static inspection; every visual state has not been exhaustively tested on a physical device.</p><div class="theme-tags"><span>Neon Glass</span><span>Minimal</span><span>Airport</span><span>Beige</span><span>Day / Night</span><span>Spider</span><span>Miles</span><span>Iron</span><span>JARVIS</span><span>Symbiote</span><span>Cyber 2099</span><span>Vintage 3D</span></div></div></article>
+ </div>
+</section>
+
+<section class="experience-section section-pad" id="experience"><div class="wrap">
+ <div class="section-heading reveal"><div><span class="section-number">02 / INTERACTIVE WEBSITE PREVIEW</span><h2>TIME IN<br><em>MOTION.</em></h2></div><p>This is a browser-side demonstration of the timing concepts. It is not the Android application and does not validate native background services, battery usage or device performance.</p></div>
+ <div class="demo-shell reveal">
+  <div class="demo-side"><div class="demo-brand">TIMEJ <small>WEB PREVIEW</small></div><button class="demo-tab active" data-mode="clock">◷ <span>Clock</span></button><button class="demo-tab" data-mode="stopwatch">◉ <span>Stopwatch</span></button><button class="demo-tab" data-mode="timer">⌛ <span>Timer</span></button><button class="demo-tab" data-mode="focus">◎ <span>Focus</span></button><div class="demo-foot">JARVIS / TIMEKEEPING</div></div>
+  <div class="demo-main"><div class="demo-heading"><div><span class="section-number">TIMEJ / WEB DEMO</span><h3 id="demo-title">The present moment.</h3></div><span class="live-status"><i></i> LIVE</span></div><div class="demo-screen" id="demo-display"><div class="demo-clock" id="demo-clock">00:00:00</div><p id="demo-caption">YOUR LOCAL TIME</p></div><div class="demo-controls" id="demo-controls"><button class="control-button" id="demo-start">CLOCK IS LIVE</button></div><p class="demo-note" id="demo-note">Local browser time. This demo does not represent native Android services.</p></div>
+ </div>
+</div></section>
+
+<section class="wrap section-pad" id="verification">
+ <div class="section-heading reveal"><div><span class="section-number">03 / EVIDENCE-LED TECHNICAL AUDIT</span><h2>CLAIMS.<br><em>CHECKED.</em></h2></div><p>These results come from static inspection of the exact APK supplied in this conversation. Runtime benchmarks and device compatibility tests were not performed. “Unverified” means there is not enough evidence to advertise the number as a confirmed specification.</p></div>
+ <div class="verification-summary"><span class="status-dot warn"></span><div><b>PUBLIC RELEASE BLOCKED</b><small>The supplied APK declares itself debuggable and its internal version is 2.2 (version code 5), while the former product page advertised v5.0. Do not distribute this artifact as a production release.</small></div></div>
+ <div class="verification-table-wrap"><table class="verification-table">
+  <thead><tr><th>Specification / claim</th><th>Inspection result</th><th>Status</th></tr></thead>
+  <tbody>
+   <tr><td>APK file size</td><td>5,033,267 bytes · 5.03 MB (4.80 MiB)</td><td><span class="pill confirmed">CONFIRMED</span></td></tr>
+   <tr><td>Android compatibility</td><td>Manifest minSdkVersion 26 (Android 8.0), targetSdkVersion 34 (Android 14). Android 15+ device testing was not performed.</td><td><span class="pill partial">MANIFEST CONFIRMED</span></td></tr>
+   <tr><td>App version</td><td>versionName 2.2 · versionCode 5. This does not match the old v5.0 website label.</td><td><span class="pill confirmed">CONFIRMED</span></td></tr>
+   <tr><td>60 FPS performance</td><td>No frame-time capture, device benchmark or sustained-load test was supplied or run.</td><td><span class="pill unverified">UNVERIFIED</span></td></tr>
+   <tr><td>Below 45 MB RAM</td><td>No runtime memory profile was captured. Static APK size does not prove RAM usage.</td><td><span class="pill unverified">UNVERIFIED</span></td></tr>
+   <tr><td>SHA-256 integrity hash</td><td id="sha256-value">2971c15372b4e3e24e2f06585d3d0c2ded5a425829599af11adcf52f2aa82bf9</td><td><span class="pill confirmed">COMPUTED</span></td></tr>
+   <tr><td>APK signature</td><td>JAR/v1 signature check reported verified. Certificate is self-signed. Android APK v2/v3 scheme verification with apksigner was not performed; signer identity is not independently authenticated.</td><td><span class="pill partial">PARTIAL CHECK</span></td></tr>
+   <tr><td>Zero ads</td><td>No recognised ad SDK or ad-network integration was detected in the inspected static APK contents. Runtime traffic was not observed.</td><td><span class="pill partial">STATIC CHECK ONLY</span></td></tr>
+   <tr><td>Fully offline operation</td><td>Not established. The app declares INTERNET permission and bundled assets refer to remote web resources such as hosted fonts / CDN libraries.</td><td><span class="pill unverified">NOT CONFIRMED</span></td></tr>
+   <tr><td>Background timer reliability</td><td>Wake-lock, worker and audio keepalive code paths are present. No native Service declaration was found in the manifest; process survival was not tested.</td><td><span class="pill partial">CODE OBSERVED</span></td></tr>
+   <tr><td>12 visual themes</td><td>12 named theme definitions were found in the bundled application HTML. Full device-by-device visual testing was not performed.</td><td><span class="pill confirmed">STATIC CONTENT CONFIRMED</span></td></tr>
+  </tbody>
+ </table></div>
+ <div class="hash-panel"><div><span class="section-number">APK SHA-256</span><p>Use this value to compare a copy of the exact inspected APK. A matching hash proves file identity, not that an APK is safe or that its signer is trusted.</p></div><button class="btn ghost" id="copy-sha256" type="button">COPY HASH</button><span id="sha-copy-status" role="status">LOCAL FILE HASH</span></div>
+ <div class="security-panel"><h3>PERMISSION &amp; RELEASE REVIEW</h3><p>The supplied manifest requests microphone recording, internet and network state, vibration, phone calling, killing background processes, querying installed packages, wake lock, foreground service and contacts access. Review each permission against the app's actual user-facing need and remove unnecessary access before production distribution.</p><div class="release-blocker"><b>RELEASE BLOCKER: android:debuggable = true</b><span>The APK is a debug-enabled build. Build a release-signed, non-debuggable APK and re-check its version metadata, signing schemes, permissions and runtime behaviour before public release.</span></div></div>
+</section>
+
+<section class="download-section" id="download"><div class="wrap download-inner reveal">
+ <div><span class="section-number">04 / DOWNLOAD &amp; PROJECT SUPPORT</span><h2>GET THE<br><em>RIGHT BUILD.</em></h2><p>The uploaded APK has been inspected, but public distribution is paused because it is debuggable and its manifest version does not match the previous v5.0 label. No release asset is being presented as ready.</p><div class="release-status is-error"><i></i><span>PRODUCTION APK REQUIRED BEFORE RELEASE</span></div><div class="release-meta">EXPECTED FILE NAME: TimeJ.apk · PUBLISH ONLY AFTER RELEASE BUILD VALIDATION</div><a class="creator-link release-page-link" href="https://github.com/mokshith7777/projects/releases" target="_blank" rel="noopener">VIEW GITHUB RELEASES ↗</a></div>
+ <div class="download-stack"><div class="download-card"><div class="file-row"><div class="file-symbol">TJ</div><div><b>TimeJ Android App</b><small>INSPECTED FILE · 2.2 / BUILD 5</small></div><span>● HOLD</span></div><button class="btn primary full" disabled>DOWNLOAD PAUSED · DEBUG BUILD</button><small class="download-note">The verified SHA-256 above identifies this uploaded file. It is not being published as the production download.</small></div>
+ <div class="support-card"><div class="support-top"><span>SUPPORT JARVIS / TIMEJ</span><b>₹49</b></div><h3>OPTIONAL PROJECT SUPPORT</h3><p>UPI payment is disabled until a suitable guardian-managed payment account and payee name are configured. This site does not verify transactions or unlock paid features.</p><button class="btn primary full" id="upi-support" type="button" disabled>⚡ SUPPORT VIA UPI · ₹49</button><div class="support-hint" id="upi-hint">UPI is disabled until a valid guardian-managed UPI ID and matching payee name are configured.</div><a class="international-link" id="international-link" hidden target="_blank" rel="noopener">INTERNATIONAL SUPPORT ↗</a></div></div>
+</div></section>
+
+<section class="wrap creator section-pad" id="creator">
+ <div class="creator-left reveal"><span class="section-number">05 / CREATOR &amp; SOCIALS</span><h2>MOKSHITH<br><em>REDDY.</em></h2><p>TIMEJ is part of the JARVIS project collection. Follow the public creator channels and explore the wider portfolio.</p><a class="creator-link" href="https://mokshith7777.github.io/jarvis-ai-portfolio/" target="_blank" rel="noopener">JARVIS PORTFOLIO ↗</a></div>
+ <div class="creator-right reveal"><div class="creator-head"><span>OFFICIAL CREATOR LINKS</span><span>SOCIAL / WEB</span></div>
+  <a href="https://www.instagram.com/mokxith_jarvis/" target="_blank" rel="noopener"><b>INSTAGRAM</b><small>@mokxith_jarvis</small><i>↗</i></a>
+  <a href="https://www.youtube.com/@jarvis5104" target="_blank" rel="noopener"><b>YOUTUBE</b><small>@jarvis5104</small><i>↗</i></a>
+  <a href="https://x.com/SinganaEce12668" target="_blank" rel="noopener"><b>X / TWITTER</b><small>@SinganaEce12668</small><i>↗</i></a>
+  <a href="https://x.com/mokshithjarvis" target="_blank" rel="noopener"><b>X / JARVIS</b><small>@mokshithjarvis</small><i>↗</i></a>
+  <a href="https://mokshith7777.github.io/projects/" target="_blank" rel="noopener"><b>PROJECTS PORTAL</b><small>JARVIS / PROJECTS</small><i>↗</i></a>
+  <a href="https://github.com/mokshith7777" target="_blank" rel="noopener"><b>GITHUB</b><small>@mokshith7777</small><i>↗</i></a>
+  <a class="github-link" href="https://github.com/mokshith7777" target="_blank" rel="noopener">VIEW CREATOR PROFILE ↗</a>
+ </div>
+</section>
+</main>
+
+<div class="payment-modal" id="payment-modal" aria-hidden="true">
+ <div class="payment-backdrop" data-close-payment></div>
+ <section class="payment-dialog" role="dialog" aria-modal="true" aria-labelledby="payment-title">
+  <button class="payment-close" type="button" aria-label="Close payment dialog" data-close-payment>×</button>
+  <span class="section-number">JARVIS / UPI PAYMENT</span><h2 id="payment-title">SCAN TO PAY <em>₹49</em></h2>
+  <p class="payment-description">Scan with your UPI app. Check the payee name and amount inside the payment app before approving.</p>
+  <div class="qr-frame"><div id="upi-qr"></div></div>
+  <div class="payment-details"><span>PAYEE</span><b id="upi-payee-label">Not configured</b><span>AMOUNT</span><b>₹49.00</b><span>NOTE</span><b>TimeJ Support</b></div>
+  <button class="btn ghost full" type="button" data-close-payment>CLOSE</button>
+  <small>Payment is not verified by this website. Never share your UPI PIN or OTP.</small>
+ </section>
+</div>
+<footer><div class="wrap footer-inner"><a class="wordmark" href="#home">JARVIS<span>●</span></a><span>TIMEJ · PRECISION. FOCUS. EVERY SECOND.</span><span>© <span id="year"></span> MOKSHITH REDDY</span></div></footer>
+</body>
+</html>
