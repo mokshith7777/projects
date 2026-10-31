@@ -73,7 +73,7 @@
     const start = $("#demo-start");
     if (mode === "clock") start.textContent = "PAUSE CLOCK";
     else start.textContent = running ? "PAUSE" : "START";
-    $("#demo-reset").textContent = "RESET";
+    const reset = $("#demo-reset"); if (reset) reset.textContent = "RESET";
   };
   const setMode = next => {
     if (interval) clearInterval(interval);
