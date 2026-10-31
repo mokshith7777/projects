@@ -4,6 +4,6 @@ window.TIMEJ_PAYMENT_CONFIG = {
   upiId: "",
   payeeName: "",
   amount: "49.00",
-  note: "TimeJ Pro Unlock",
+  note: "TimeJ Support",
   internationalUrl: ""
 };
